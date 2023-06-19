@@ -26,6 +26,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <!-- external CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -55,23 +59,27 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            <i class="fa-regular fa-user text-primary"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                </ul>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <button class="btn btn-primary" onclick="darkModu()"> <i class="fa-solid fa-moon"></i></button>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Arama İçin ..." aria-label="Search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama İçin ..."
+                        aria-label="Search">
                     <button class="btn btn-primary" type="submit">Ara</button> <!-- btn-outline-success
               -->
                 </form>
@@ -81,44 +89,52 @@
     <!-- end nav codes -->
 
     <!-- start header codes -->
+    <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Frontend Eğitimimize Hoşgeldiniz}+h4{Html5 Css3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success -->
     <header id="header_id">
-        <!-- div.text-white>div.container>div.p-5.text-uppercase.display-4{Frontend Eğitimimize Hoşgeldiniz}+h4{Html5 Css3 JS React}+a.btn.btn-primary+a.btn.btn-danger+a.btn.btn-success -->
-        <header id="header_id">
-            <div class="text-white">
-                <div class="container text-center">
-                    <div class="p-5 text-uppercase display-4">Frontend Eğitimimize Hoşgeldiniz</div>
-                    <h4>Html5 Css3 JS React</h4>
-                    <a href="" class="btn btn-primary">Linkedin</a>
-                    <a href="" class="btn btn-danger">Blog</a>
-                    <a href="" class="btn btn-success">Youtube</a>
-                </div>
+        <div class="text-white">
+            <div class="container text-center">
+                <div class="p-5 text-uppercase display-4">Frontend Eğitimimize Hoşgeldiniz</div>
+                <h4>Html5 Css3 JS React</h4>
+                <a href="" class="btn btn-primary">Linkedin</a>
+                <a href="" class="btn btn-danger">Blog</a>
+                <a href="" class="btn btn-success">Youtube</a>
             </div>
-        </header>
-        <!-- end header codes -->
+        </div>
+    </header>
+    <!-- end header codes -->
 
-        <!-- start main codes -->
-        <main id="main_id">
+    <!-- start main codes -->
+    <main id="main_id">
+<section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sapiente labore non architecto iste dignissimos velit, consectetur, cumque modi iure accusantium? Iusto, quae fugiat fuga enim ut quidem voluptate a?
+    Perferendis laudantium dicta nobis nesciunt, iste reprehenderit ea perspiciatis excepturi possimus. Id blanditiis nam sequi doloremque nisi adipisci modi dolores ipsum repellendus alias, eaque dicta aut nihil doloribus sint assumenda?
+    Porro iusto a reprehenderit similique vero! Totam, ducimus praesentium accusamus molestias molestiae, quo minus earum labore maiores iusto quam ipsum laboriosam, possimus veniam non corporis! Accusamus ad veniam enim? Est!
+    Tempore rem aliquam officiis architecto dignissimos provident quam. Consectetur repellat atque cum animi corrupti! Cupiditate incidunt aliquid magni, autem beatae harum at magnam, nisi sunt modi ad, optio animi voluptate!
+    Aliquam sunt nemo magni maiores quaerat, eius omnis consequuntur dignissimos quisquam corporis commodi blanditiis praesentium? Repellat reiciendis dicta temporibus recusandae repellendus, quia ipsum eius deserunt. At, saepe quos? Cum, officia?
+    Vitae, placeat sed. Hic illo assumenda veritatis pariatur vero accusamus sunt cumque quam. Odio quaerat maxime repudiandae quam officia laudantium esse minima at perferendis praesentium mollitia obcaecati, animi ea velit!
+    Natus dicta dolorum asperiores alias corporis quod, nulla laudantium in fugit iusto odit consequuntur libero iure. Accusantium nam nisi consequuntur animi ex asperiores ipsa, dolorem error maxime rerum illo. Accusamus.
+    Eius porro soluta quis, ex sint saepe illo magnam dolorem, consectetur commodi at beatae eaque veniam a, nobis quasi voluptates quam suscipit. Ab delectus nam esse tempore, repellat quod blanditiis?</p>
+</section>
+    </main>
+    <!-- end main codes -->
 
-        </main>
-        <!-- end main codes -->
+    <!-- start footer codes -->
+    <footer id="footer_id" class="bg-dark">
+        <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span>  &copy; Bütün Haklar saklıdır</div>
+    </footer>
+    <!-- end footer codes -->
 
-        <!-- start footer codes -->
-        <footer id="footer_id"></footer>
-        <!-- end footer codes -->
+    <!-- end codes -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous" />
+    </script>
 
-        <!-- end codes -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-            crossorigin="anonymous" />
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous" />
+    </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-            crossorigin="anonymous" />
-        </script>
-
-        <!-- external JS -->
-        <script src="template.js"></script>
+    <!-- external JS -->
+    <script src="template.js"></script>
 </body>
 
 </html>

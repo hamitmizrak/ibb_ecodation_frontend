@@ -7,6 +7,9 @@ Version : v.1
 
 /*######################################################*/
 /* Root */
+:root{
+    --templateBgColor:rgb(43, 43, 43);
+}
 
 /*######################################################*/
 /* Common Property */
@@ -99,15 +102,27 @@ i {
     overflow: hidden; 
 }
 
-
 /*######################################################*/
+
+/* Navbar */
+.dark_mode{
+    background-color: var(--templateBgColor);
+    color: #ffffff;
+}
+
 /* Header */
 header{
 background-image: url("./img/header.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 50% 50%;
-z-index: -1;
 height:80vh;
 padding-top:4rem;
+}
+
+/* Footer */
+footer{
+    min-height: 10rem;
+    width: auto;
+    color:white;
 }
