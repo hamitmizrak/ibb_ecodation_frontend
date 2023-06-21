@@ -53,6 +53,10 @@ i {
     font-size: 1.5rem;
 }
 
+p{
+    color:black!important;
+}
+
 .my_clearfix::after{
     content: "";
     display: block;
@@ -143,11 +147,14 @@ height:80vh;
 padding-top:4rem;
 }
 
-
 /* Messages */
 #messages{
     margin-top:3rem;
     margin-bottom:3rem;
+}
+
+#messages > .container > .row > .text-center> p{
+    color:black!important;
 }
 
 #messages i{
@@ -167,9 +174,26 @@ padding-top:4rem;
     background-attachment: fixed;
 }
 
-#parallax h2,p{
-    color:white;
+#parallax > h2,p{
+    color:white!important;
 }
+
+/* newspaper */
+#newspaper  {  
+   height: 35rem;
+   padding:2rem;
+}
+#newspaper p {  
+    color:black!important;  
+    text-align: justify;
+}
+
+
+/* blog */
+#blog{
+background-color: #b5b8ff;
+}
+
 
 /* Footer */
 footer{
