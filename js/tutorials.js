@@ -195,28 +195,28 @@ multiple Comment
 
 ///////////////////////////////////////////////////
 // string
-let str="js ÖĞreniyorum js ";
-console.log(str);
+// let str="js ÖĞreniyorum js ";
+// console.log(str);
 
-console.log(str.length);
-console.log(str.trim().length);
+// console.log(str.length);
+// console.log(str.trim().length);
 
-console.log(str.toLowerCase());
-console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
 
-console.log(str.charAt(0));
+// console.log(str.charAt(0));
 
-console.log(str.indexOf("js"));
-console.log(str.lastIndexOf("js"));
+// console.log(str.indexOf("js"));
+// console.log(str.lastIndexOf("js"));
 
-console.log(str.concat("sona"));
-console.log(str.replace(str,"değiştir"));
+// console.log(str.concat("sona"));
+// console.log(str.replace(str,"değiştir"));
 
-console.log(str.substring(1));
-console.log(str.substring(0,4));
+// console.log(str.substring(1));
+// console.log(str.substring(0,4));
 
 // Ödev 
-// ÖDEV NOT:5 adımı beraber yapalım
+// ÖDEV NOT:5 adımı beraber yapalım.
 // kullanıcı tarafından girilen bir kelimenin (prompt)
 // let userData= prompt("Lütfen bir şeyler yazınız");
 // S-1) Kaç karakterlidir ? (length)
@@ -232,4 +232,36 @@ console.log(str.substring(0,4));
 // S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
 // S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
+///////////////////////////////////////////////////
+// Function (Normal)
+// 1 retursuz Parametresiz
+function retursuzParametresiz(){
+    console.log("deneme");
+}
+retursuzParametresiz();
 
+// 2 retursuz Parametresiz
+function retursuzParametreli(adi){ // parametre: adi
+    console.log("deneme "+adi);
+}
+retursuzParametreli("HamitM") // argüman: "HamitM"
+
+// 3 retursuz Parametresiz
+function returnluParametresiz(){
+    return "deneme55";
+}
+let result3= returnluParametresiz();
+console.log(result3);
+
+// 4 retursuz Parametresiz
+function returnluParametreli(soyadi){
+    return "deneme66 "+soyadi;
+}
+let result4= returnluParametreli("Mizrak");
+console.log(result4);
+
+///////////////////////////////////////////////////
+// Anoymous (Function)
+
+///////////////////////////////////////////////////
+// Arrow (Function)
