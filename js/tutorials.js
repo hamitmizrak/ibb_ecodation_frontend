@@ -135,65 +135,101 @@ multiple Comment
 
 ///////////////////////////////////////////////////
 // Number 
-var sayi=15000;
-console.log(sayi);
+// var sayi=15000;
+// console.log(sayi);
 
-var sayi2=1.5E+4;
-console.log(sayi2);
+// var sayi2=1.5E+4;
+// console.log(sayi2);
 
 // binary,octal,decimal, hexadecimal
 
 // binary : 0-1
-var binary=0b00011;
-console.log(binary);
+// var binary=0b00011;
+// console.log(binary);
 
 // octal : 0-1-2-3-4-5-6-7
-var octal=0o7612;
-console.log(octal);
+// var octal=0o7612;
+// console.log(octal);
 
 // decimal : 0-1-2-3-4-5-6-7-8-9
-var decimal=123456;
-console.log(decimal);
+// var decimal=123456;
+// console.log(decimal);
 
 // hexdecimal : 0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F
-var hexadecimal=0xffa;
-console.log(hexadecimal);
+// var hexadecimal=0xffa;
+// console.log(hexadecimal);
 
 // Number() parseInt() nedir aralarındaki farklar ?
 // String() data.toString nedir aralarındaki farklar ?
 // Cast
 // database, port , api (string)
-console.log(Number("10")+10);
-console.log(parseInt("10")+10);
+// console.log(Number("10")+10);
+// console.log(parseInt("10")+10);
 
-console.log(String(30)+10);
-var number=30;
-console.log(number.toString()+10);
+// console.log(String(30)+10);
+// var number=30;
+// console.log(number.toString()+10);
 
 ///////////////////////////////////////////////////
 // var, let, const
 
-var data1=11;
-console.log(data1);
+// var data1=11;
+// console.log(data1);
 
-var data1=22;
-console.log(data1);
+// var data1=22;
+// console.log(data1);
 
-let data2=33;
-console.log(data2);
+// let data2=33;
+// console.log(data2);
 
-let data3=33;
-data3=44;
-console.log(data3);
+// let data3=33;
+// data3=44;
+// console.log(data3);
 
-const data4=55;
-console.log(data4);
+// const data4=55;
+// console.log(data4);
 
-const data5=55;
-data5=66;
-console.log(data5);
+// const data5=55;
+// data5=66;
+// console.log(data5);
 
 ///////////////////////////////////////////////////
 // string
+let str="js ÖĞreniyorum js ";
+console.log(str);
+
+console.log(str.length);
+console.log(str.trim().length);
+
+console.log(str.toLowerCase());
+console.log(str.toUpperCase());
+
+console.log(str.charAt(0));
+
+console.log(str.indexOf("js"));
+console.log(str.lastIndexOf("js"));
+
+console.log(str.concat("sona"));
+console.log(str.replace(str,"değiştir"));
+
+console.log(str.substring(1));
+console.log(str.substring(0,4));
+
+// Ödev 
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+// let userData= prompt("Lütfen bir şeyler yazınız");
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// console.log(userData.replace("xxxxxxx"),"javascript");
+// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
 
 
