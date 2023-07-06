@@ -469,6 +469,28 @@ debugData()
 // (Clean code kuralları çercevesinde ) algoritma yapan JS program?
 
 
+////////////////////////////////////////////////////////
+//Örnek-1
+//y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
+//Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
+//örnek-2
+//Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
+//Formül: (derece*9/5)+32
+//örnek-3 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
+//4+3*2(3:3-1*6+9:1+(3:3))
+
+////////////////////////////////////////////////////////
+// ÖDEV 
+// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
+// eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
+// Hamit Mızrak
+// H**** MIZ***
+// ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+////////////////////////////////////////////////////////
+
+
+
 
 
 
