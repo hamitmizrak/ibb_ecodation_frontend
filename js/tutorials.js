@@ -275,7 +275,101 @@ multiple Comment
 // arrow function
 
 ///////////////////////////////////////////////////
+// function deneme1(){
+//     console.log("normal function");
+// }
+// deneme1();
+
+// const deneme2= function (){
+//     console.log("anonymous function");
+// }
+// deneme2();
+
+// const deneme3=  ()=>{
+//     console.log("arrow function function");
+// }
+// deneme3();
+
 // Immedia Function ()();
+// (function(){
+//     console.log("deneme4");
+// })();
+
+///////////////////////////////////////////////////
 // condition
+const condi = () => {
+    let number = 4;
+    if (number >= 2) {
+        console.log("Büyüktür");
+    } else {
+        console.log("Küçüktür");
+    }
+}
+condi();
+
+const condi2 = () => {
+    let number = 4;
+    if (number >= 2)
+        console.log("Büyüktür");
+    else
+        console.log("Küçüktür");
+
+}
+condi2()
+
+const condi3 = () => {
+    let number = 4;
+    let result = (number >= 2) ? "Büyüktür" : "Küçüktür";
+    console.log(result);
+}
+condi3()
+
+const condi4 = () => {
+    let number = 4;
+    console.log((number >= 2) ? "Büyüktür" : "Küçüktür");
+}
+condi4();
+
+const condi5 = () => {
+    let number = 4;
+    if (number == "1") {
+        console.log("1");
+    } else if (number == 2) {
+        console.log("2");
+    } else if (number == 3) {
+        console.log("3");
+    } else if (number === 4) {
+        console.log("4");
+    } else {
+        console.log("1<=X<=5 dışındadır");
+    }
+}
+condi5();
+
+const condi6 = () => {
+    let number = 4;
+// break   : döngü kırmak
+// return  : metot kırmak
+// continue: 1 kereye mahsus es geç sonra döngüye devam et.
+    switch (number) {
+        case 1:
+            console.log("1");
+            break; // döngü kırmak
+        case 2:
+            console.log("2");
+            break;
+        case 3:
+            console.log("3");
+            break;
+        case 4:
+            console.log("4");
+            break;
+        default:
+            console.log("1<=X<=5 dışındadır");
+            break;
+    }
+}
+condi6();
+
 // loop
 // Örnekler
