@@ -348,9 +348,9 @@ condi5();
 
 const condi6 = () => {
     let number = 4;
-// break   : döngü kırmak
-// return  : metot kırmak
-// continue: 1 kereye mahsus es geç sonra döngüye devam et.
+    // break   : döngü kırmak
+    // return  : metot kırmak
+    // continue: 1 kereye mahsus es geç sonra döngüye devam et.
     switch (number) {
         case 1:
             console.log("1");
@@ -370,6 +370,56 @@ const condi6 = () => {
     }
 }
 condi6();
+///////////////////////////////////////////////////////
+// ÖDEV: 
+// Kullanıcı tarafından girilen bir sayının negatif mi, pozitif mi ? bunu yazan JS code yazınız.
+// (Dikkat: normal  function ile yazınız)
 
+// Kullanıcı tarafından girilen bir sayının tek mi, çift mi olduğunu yazan JS code yazınız.
+// (Dikkat:anonymous function ve ternary ile yazınız)
+
+let isOddEven = () => {
+    const result = 4;
+    if (result % 2 == 0)
+        console.log("çifttir");
+    else
+        console.log("tektir");
+}
+isOddEven()
+
+// Kullanıcıdan alınan sayıya göre Haftanın günlerini switch-case ile JS code yazınız?
+// Örneğin: kullanıcı 1 girdi: 1=pazartesi yazacak
+
+////////////////////////////////////////////////////////
 // loop
+
+let loop = () => {
+    for (let i = 1; i <= 10; i++) {
+        document.write(i + " ")
+    }
+}
+loop();
+document.writeln("<br/>")
+
+let loop2 = () => {
+    let i = 1; 
+    while (i <= 10) {
+        document.write(i + " ")
+        i++
+    }
+}
+loop2();
+
+document.writeln("<br/>")
+
+let loop3 = () => {
+    let i = 1; 
+    do{
+       document.write(i + " ")
+        i++;
+    }
+    while (i <= 10);
+}
+loop3();
+
 // Örnekler
