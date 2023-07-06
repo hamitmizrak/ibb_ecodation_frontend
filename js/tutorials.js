@@ -444,11 +444,11 @@ let tryCatchTuto = () => {
 // 1 ile 10 dahil olmak üzere toplama işlemi yapan JS algoritmasını yazınız 
 
 const debugData = () => {
-    let sum=0;
-    for (let i = 1; i <=10; i++) {
-       sum=sum+i;
+    let sum = 0;
+    for (let i = 1; i <= 10; i++) {
+        sum = sum + i;
     }
-    console.log("Toplam: "+sum);
+    console.log("Toplam: " + sum);
 }
 debugData()
 
@@ -468,19 +468,49 @@ debugData()
 // Dikkat: Bu algoritmayı Arrow Function ile yapalım.
 // (Clean code kuralları çercevesinde ) algoritma yapan JS program?
 
+let sumExamplesData = () => {
+    let commonSum = 0;
+    let oddSum = 0, oddCounter = 0, oddNumber = 0;
+    let evenSum = 0, evenCounter = 0, evenNumber = 0;
+    // user data
+    let user = Number(prompt("Lütfen Bitiş sayısını yazınız"));
+
+    for (let i = 1; i <=user ; i++) {
+       if(user===44){
+        console.log("secret key number failed  "+user);
+        break;
+       }
+
+       if(i===50){
+        console.log("en fazla 50 sayısına kadar hesaplanır "+user);
+        break;
+       }
+
+       if(i===7){
+        console.log("7 sayısını toplama !!! "+user);
+        continue;
+       }
+       
+    }
+
+}
+sumExamplesData()
+
 
 ////////////////////////////////////////////////////////
 //Örnek-1
 //y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
-//Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
+//Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
+
 //örnek-2
 //Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
 //Formül: (derece*9/5)+32
+
 //örnek-3 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
 //4+3*2(3:3-1*6+9:1+(3:3))
 
 ////////////////////////////////////////////////////////
-// ÖDEV 
+// ÖDEV
 // kullanıcıdan aldığımız isim soyisim (boşluk var)
 // ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
 // eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
