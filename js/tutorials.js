@@ -450,9 +450,10 @@ const debugData = () => {
     }
     console.log("Toplam: " + sum);
 }
-debugData()
+//debugData()
 
 ////////////////////////////////////////////////////////
+// return break continue ?
 // break: döngünün çalışmasına izin verme
 // return: metotun çalışmasına izin verme
 // continue: sadece bir seferlik o şartta çalışma
@@ -512,7 +513,7 @@ let sumExamplesData = () => {
     console.log("Çift sayı adedi: "+evenCounter);
     console.log("Çift sayı toplam: "+evenSum);
 } // end sumExamplesData
-sumExamplesData()
+//sumExamplesData()
 
 
 ////////////////////////////////////////////////////////
@@ -529,14 +530,47 @@ sumExamplesData()
 
 ////////////////////////////////////////////////////////
 // ÖDEV
-// kullanıcıdan aldığımız isim soyisim (boşluk var)
+// kullanıcıdan aldığımız isim alınsın
+// kullanıcıdan aldığımız soyisim alınsın
 // ilk karakter göstersin sonraki kelimeleri masking (maskeleme yapsın)
 // eğer kullanıcı isim ve soyisimi ilk karakteri küçük girmişse büyük olsun mutlaka
 // Hamit Mızrak
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
+
+let usernameAndSurnameMasking=()=>{
+    const usernameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz");
+
+    const userIndex=usernameAndSurname.indexOf(" ");
+    let username=usernameAndSurname.substring(0,userIndex);
+    for (let i = 1; i < username.length; i++) {
+      username=username.replace(username.charAt(i),"*");
+    }
+    username= username.toUpperCase()
+    console.log(username.toUpperCase());
+
+    let surname=usernameAndSurname.substring(userIndex+1,usernameAndSurname.length).toUpperCase();
+    for (let i = 3; i <=username.length; i++) {
+        surname=surname.replace(surname.charAt(i),"*");
+    }
+    console.log(surname);
+    console.log(username.concat(" ").concat(surname)  );
+}
+usernameAndSurnameMasking();
+
+
 ////////////////////////////////////////////////////////
 
+// software  prensible
+// Monad 
+// setTimeOut
+// callbackfunction
+// promise
+// asyn/await
+// dizi forEach, map, filter ,
+// obje
+// dom
+// jquery ajax GET/POST
 
 
 
@@ -544,5 +578,5 @@ sumExamplesData()
 
 
 
-////////////////////////////////////////////////////////
-// return break continue ?
+
+
