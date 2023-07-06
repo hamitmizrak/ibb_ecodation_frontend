@@ -470,30 +470,48 @@ debugData()
 
 let sumExamplesData = () => {
     let commonSum = 0;
-    let oddSum = 0, oddCounter = 0, oddNumber = 0;
-    let evenSum = 0, evenCounter = 0, evenNumber = 0;
+    let oddSum = 0, oddCounter = 0, oddNumber = "";
+    let evenSum = 0, evenCounter = 0, evenNumber = "";
     // user data
     let user = Number(prompt("Lütfen Bitiş sayısını yazınız"));
 
-    for (let i = 1; i <=user ; i++) {
-       if(user===44){
-        console.log("secret key number failed  "+user);
-        break;
-       }
+    for (let i = 1; i <= user; i++) {
+        if (user === 44) {
+            console.log("secret key number failed  " + user);
+            break;
+        }
 
-       if(i===50){
-        console.log("en fazla 50 sayısına kadar hesaplanır "+user);
-        break;
-       }
+        if (i === 50) {
+            console.log("en fazla 50 sayısına kadar hesaplanır " + user);
+            break;
+        }
 
-       if(i===7){
-        console.log("7 sayısını toplama !!! "+user);
-        continue;
-       }
-       
-    }
+        if (i === 7) {
+            console.log("7 sayısını toplama !!! " + user);
+            continue;
+        }
+        if (i % 2 == 0) {
+            //evenSum = evenSum+i;
+            evenSum += i;
+            evenCounter++;
+            evenNumber = evenNumber+" "+i;
+        } else {
+            oddSum += i;
+            oddCounter++;
+            oddNumber = oddNumber+" "+i;
+        }
+        commonSum+=i;
+    } // end for
+    console.log("Toplam: "+commonSum);
 
-}
+    console.log("Tek sayılar: "+oddNumber);
+    console.log("Tek sayı adedi: "+oddCounter);
+    console.log("Tek sayı toplam: "+oddSum);
+
+    console.log("Çift sayılar: "+evenNumber);
+    console.log("Çift sayı adedi: "+evenCounter);
+    console.log("Çift sayı toplam: "+evenSum);
+} // end sumExamplesData
 sumExamplesData()
 
 
