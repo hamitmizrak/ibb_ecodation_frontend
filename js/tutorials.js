@@ -235,33 +235,47 @@ multiple Comment
 ///////////////////////////////////////////////////
 // Function (Normal)
 // 1 retursuz Parametresiz
-function retursuzParametresiz(){
-    console.log("deneme");
-}
-retursuzParametresiz();
+// function retursuzParametresiz() {
+//     console.log("deneme");
+// }
+// retursuzParametresiz();
 
-// 2 retursuz Parametresiz
-function retursuzParametreli(adi){ // parametre: adi
-    console.log("deneme "+adi);
-}
-retursuzParametreli("HamitM") // argüman: "HamitM"
+// // 2 retursuz Parametresiz
+// function retursuzParametreli(adi) { // parametre: adi
+//     console.log("deneme " + adi);
+// }
+// retursuzParametreli("HamitM") // argüman: "HamitM"
 
-// 3 retursuz Parametresiz
-function returnluParametresiz(){
-    return "deneme55";
-}
-let result3= returnluParametresiz();
-console.log(result3);
+// // 3 retursuz Parametresiz
+// function returnluParametresiz() {
+//     return "deneme55";
+// }
+// let result3 = returnluParametresiz();
+// console.log(result3);
 
-// 4 retursuz Parametresiz
-function returnluParametreli(soyadi){
-    return "deneme66 "+soyadi;
-}
-let result4= returnluParametreli("Mizrak");
-console.log(result4);
-
-///////////////////////////////////////////////////
-// Anoymous (Function)
+// // 4 retursuz Parametresiz
+// function returnluParametreli(soyadi) {
+//     return "deneme66 " + soyadi;
+// }
+// let result4 = returnluParametreli("Mizrak");
+// console.log(result4);
 
 ///////////////////////////////////////////////////
-// Arrow (Function)
+// // Normal Function
+// function normal() { }
+
+// // Anonymous (Function)
+// let anonymous = function () { }
+
+// // Arrow (Function)
+// let arrow = () => { }
+
+///////////////////////////////////////////////////
+// let veya const
+// arrow function
+
+///////////////////////////////////////////////////
+// Immedia Function ()();
+// condition
+// loop
+// Örnekler
