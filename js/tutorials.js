@@ -699,7 +699,6 @@ let arrResult = () => {
     data.sort().reverse();
     console.log(data);
     console.log(data.toString().substring(0, 2));
-
     // splice ,slice 
 }
 arrResult();
