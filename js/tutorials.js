@@ -591,14 +591,16 @@ let usernameAndSurnameMasking=()=>{
 // callbackfunction
 
 const birinci=(data)=>{
-console.log(Math.pow(2,data));
- return user;
+ return Math.pow(2,data);
 }
 
 const ikinci=(callbackFunction)=>{
     let user=Number(prompt("Lütfen Sayı Giriniz"));
-    callbackFunction(user);
+   let data= callbackFunction(user);
+   console.log(data);
 }
+
+ikinci(birinci)
 
 // promise
 // asyn/await
