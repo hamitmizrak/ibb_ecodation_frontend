@@ -625,45 +625,58 @@ const promTutorials = () => {
 ////////////////////////////////////////////////////////
 // dizi, Iterative for, for in, for of, forEach, map, filter , fill
 let arr = () => {
-    const numbers = [3, 5, 6, 1, 9,4,66];
+    const numbers = [3, 5, 6, 1, 9, 4, 66];
     return numbers;
 }
 
-let arrResult=()=>{
-    let data=arr();
+let arrResult = () => {
+    let data = arr();
     console.log(data);
     console.log(data[0]);
     console.log(data[5]);
-    console.log(data[data.length-1]);
+    console.log(data[data.length - 1]);
 
-    //Iterative For Loop
-    for(let i=0 ;i<data.length;i++){
-        document.write(data[i]+" ");
-    }
-    document.write("<br/>");
-    // for in 
-    for(let temp in data){
-        document.write(temp+" => "+data[temp]+"<br/>");
-    }
+    // //Iterative For Loop
+    // for(let i=0 ;i<data.length;i++){
+    //     document.write(data[i]+" ");
+    // }
+    // document.write("<br/>");
+    // // for in 
+    // for(let temp in data){
+    //     document.write(temp+" => "+data[temp]+"<br/>");
+    // }
 
-    document.write("<br/>");
-    // for of 
-    for(let temp of data){
-        document.write(temp+" ");
-    }
+    // document.write("<br/>");
+    // // for of 
+    // for(let temp of data){
+    //     document.write(temp+" ");
+    // }
     document.write("<br/>");
     // ForEach
     // forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
-    data.forEach((value,index,array)=>{
+    data.forEach((value, index, array) => {
+        document.write(index + " => " + value + "<br/>");
+        //document.write(`${index} => ${value} <br/>`);
+    });
+
+    document.write("<br/>");
+    // filter
+    // filter<S extends T>(predicate: (value: T, index: number, array: T[]) => value is S, thisArg?: any): S[];
+    let result1 = data.filter((value, index, array) => {
+        return value % 2 == 0
+    }).forEach((value, index, array) => {
         //document.write(index+" => "+value+"<br/>");
         document.write(`${index} => ${value} <br/>`);
     });
 
-    // filter
-
     // map 
-
-    // fill
+    // map<U>(callbackfn: (value: T, index: number, array: T[]) => U, thisArg?: any): U[];
+    data.map((value, index, array) => {
+        return value += 10;
+    }).forEach((value, index, array) => {
+        //document.write(index+" => "+value+"<br/>");
+        document.write(`${index} => ${value} <br/>`);
+    });
 
     // dizilere devam
 }
