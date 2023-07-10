@@ -651,10 +651,21 @@ let arrResult=()=>{
     for(let temp of data){
         document.write(temp+" ");
     }
-
+    document.write("<br/>");
     // ForEach
     //  forEach(callbackfn: (value: T, index: number, array: T[]) => void, thisArg?: any): void;
-    data.forEach();
+    data.forEach((value,index,array)=>{
+        //document.write(index+" => "+value+"<br/>");
+        document.write(`${index} => ${value} <br/>`);
+    });
+
+    // filter
+
+    // map 
+
+    // fill
+
+    // dizilere devam
 }
 arrResult();
 
