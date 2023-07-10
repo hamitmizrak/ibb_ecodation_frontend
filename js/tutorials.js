@@ -563,41 +563,53 @@ let usernameAndSurnameMasking=()=>{
 // KISS, YAGNI, SOLID, CLEAN CODE, SPAGETTI CODE, DUMMY CODE
 ////////////////////////////////////////////////////////
 // Monad 
-const birinci=()=>{
-let user=Number(prompt("Lütfen Sayı Giriniz"));
-return user;
-}
+// const birinci=()=>{
+// let user=Number(prompt("Lütfen Sayı Giriniz"));
+// return user;
+// }
 
-const ikinci=()=>{
-let data=birinci();
-console.log(Math.sqrt(data));
-}
+// const ikinci=()=>{
+// let data=birinci();
+// console.log(Math.sqrt(data));
+// }
 //ikinci()
 
 ////////////////////////////////////////////////////////
 // setTimeOut(),setInterval();
 
-// belirli zaman sonra tek bir kere çalışır ve durur
-setTimeout(function(){
-    console.log("setTimeout çalıştı");
-},2000);
+// // belirli zaman sonra tek bir kere çalışır ve durur
+// setTimeout(function(){
+//     console.log("setTimeout çalıştı");
+// },2000);
 
-// belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır.
-setInterval(function(){
-    console.log("setInterval çalıştı");
-},3000);
+// // belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır.
+// setInterval(()=>{
+//     console.log("setInterval çalıştı");
+// },3000);
 
 ////////////////////////////////////////////////////////
 // callbackfunction
+
+const birinci=(data)=>{
+console.log(Math.pow(2,data));
+ return user;
+}
+
+const ikinci=(callbackFunction)=>{
+    let user=Number(prompt("Lütfen Sayı Giriniz"));
+    callbackFunction(user);
+}
+
 // promise
 // asyn/await
 
 ////////////////////////////////////////////////////////
-// dizi forEach, map, filter ,
+// dizi, Iterative for, for in, for of, forEach, map, filter , fill 
+
+////////////////////////////////////////////////////////
 // obje
 // dom
 // jquery ajax GET/POST
-
 
 
 
