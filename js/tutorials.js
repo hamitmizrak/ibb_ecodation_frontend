@@ -556,14 +556,26 @@ let usernameAndSurnameMasking=()=>{
     console.log(surname);
     console.log(username.concat(" ").concat(surname)  );
 }
-usernameAndSurnameMasking();
-
+//usernameAndSurnameMasking();
 
 ////////////////////////////////////////////////////////
-
 // software  prensible
+// KISS, YAGNI, SOLID, CLEAN CODE, SPAGETTI CODE, DUMMY CODE
+////////////////////////////////////////////////////////
 // Monad 
-// setTimeOut
+const birinci=()=>{
+let user=Number(prompt("Lütfen Sayı Giriniz"));
+return user;
+}
+
+const ikinci=()=>{
+let data=birinci();
+console.log(Math.sqrt(data));
+}
+//ikinci()
+
+
+// setTimeOut(),setInterval();
 // callbackfunction
 // promise
 // asyn/await
