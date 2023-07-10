@@ -574,11 +574,25 @@ console.log(Math.sqrt(data));
 }
 //ikinci()
 
-
+////////////////////////////////////////////////////////
 // setTimeOut(),setInterval();
+
+// belirli zaman sonra tek bir kere çalışır ve durur
+setTimeout(function(){
+    console.log("setTimeout çalıştı");
+},2000);
+
+// belirli zaman sonra çalışır ve sonsuza kadar kapanıp tekrar çalışır.
+setInterval(function(){
+    console.log("setInterval çalıştı");
+},3000);
+
+////////////////////////////////////////////////////////
 // callbackfunction
 // promise
 // asyn/await
+
+////////////////////////////////////////////////////////
 // dizi forEach, map, filter ,
 // obje
 // dom
