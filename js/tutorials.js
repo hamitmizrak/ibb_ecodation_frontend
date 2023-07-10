@@ -495,23 +495,23 @@ let sumExamplesData = () => {
             //evenSum = evenSum+i;
             evenSum += i;
             evenCounter++;
-            evenNumber = evenNumber+" "+i;
+            evenNumber = evenNumber + " " + i;
         } else {
             oddSum += i;
             oddCounter++;
-            oddNumber = oddNumber+" "+i;
+            oddNumber = oddNumber + " " + i;
         }
-        commonSum+=i;
+        commonSum += i;
     } // end for
-    console.log("Toplam: "+commonSum);
+    console.log("Toplam: " + commonSum);
 
-    console.log("Tek sayılar: "+oddNumber);
-    console.log("Tek sayı adedi: "+oddCounter);
-    console.log("Tek sayı toplam: "+oddSum);
+    console.log("Tek sayılar: " + oddNumber);
+    console.log("Tek sayı adedi: " + oddCounter);
+    console.log("Tek sayı toplam: " + oddSum);
 
-    console.log("Çift sayılar: "+evenNumber);
-    console.log("Çift sayı adedi: "+evenCounter);
-    console.log("Çift sayı toplam: "+evenSum);
+    console.log("Çift sayılar: " + evenNumber);
+    console.log("Çift sayı adedi: " + evenCounter);
+    console.log("Çift sayı toplam: " + evenSum);
 } // end sumExamplesData
 //sumExamplesData()
 
@@ -538,23 +538,23 @@ let sumExamplesData = () => {
 // H**** MIZ***
 // ipucu: charAt, substring, indexOf, döngü, karar mekanizma
 
-let usernameAndSurnameMasking=()=>{
-    const usernameAndSurname=prompt("Lütfen adınızı ve soyadınızı giriniz");
+let usernameAndSurnameMasking = () => {
+    const usernameAndSurname = prompt("Lütfen adınızı ve soyadınızı giriniz");
 
-    const userIndex=usernameAndSurname.indexOf(" ");
-    let username=usernameAndSurname.substring(0,userIndex);
+    const userIndex = usernameAndSurname.indexOf(" ");
+    let username = usernameAndSurname.substring(0, userIndex);
     for (let i = 1; i < username.length; i++) {
-      username=username.replace(username.charAt(i),"*");
+        username = username.replace(username.charAt(i), "*");
     }
-    username= username.toUpperCase()
+    username = username.toUpperCase()
     console.log(username.toUpperCase());
 
-    let surname=usernameAndSurname.substring(userIndex+1,usernameAndSurname.length).toUpperCase();
-    for (let i = 3; i <=username.length; i++) {
-        surname=surname.replace(surname.charAt(i),"*");
+    let surname = usernameAndSurname.substring(userIndex + 1, usernameAndSurname.length).toUpperCase();
+    for (let i = 3; i <= username.length; i++) {
+        surname = surname.replace(surname.charAt(i), "*");
     }
     console.log(surname);
-    console.log(username.concat(" ").concat(surname)  );
+    console.log(username.concat(" ").concat(surname));
 }
 //usernameAndSurnameMasking();
 
@@ -589,24 +589,41 @@ let usernameAndSurnameMasking=()=>{
 
 ////////////////////////////////////////////////////////
 // callbackfunction
-
-const birinci=(data)=>{
- return Math.pow(2,data);
+const birinci = (data) => {
+    return Math.pow(data, 2);
 }
 
-const ikinci=(callbackFunction)=>{
-    let user=Number(prompt("Lütfen Sayı Giriniz"));
-   let data= callbackFunction(user);
-   console.log(data);
+const ikinci = (callbackFunction) => {
+    let user = Number(prompt("Lütfen Sayı Giriniz"));
+    let data = callbackFunction(user);
+    console.log(data);
 }
-
-ikinci(birinci)
-
+//ikinci(birinci)
+////////////////////////////////////////////////////////
 // promise
+
+const promTutorials = () => {
+    // catch 1 tane olmak zorunda
+    let data = new Promise((resolve, reject) => {
+        let status = 400;
+        if (status === 200)
+            resolve("çalıştı");
+        else
+            reject("çalışmadı")
+    }).then(
+        () => { console.log("olumlu"); }
+    ).catch(
+        (err) => { console.error(err); }
+    );
+}
+promTutorials()
+
 // asyn/await
 
 ////////////////////////////////////////////////////////
-// dizi, Iterative for, for in, for of, forEach, map, filter , fill 
+
+////////////////////////////////////////////////////////
+// dizi, Iterative for, for in, for of, forEach, map, filter , fill
 
 ////////////////////////////////////////////////////////
 // obje
