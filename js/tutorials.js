@@ -730,16 +730,27 @@ let callbackFunctionComputer = () => {
     for (let index = 0; index < 5; index++) {
         let computerObject =
         {
-            computerName: `computer ${index+1}`,
-            price: `${index+1}`*`${Number(100)}`
+            computerName: `computer ${index + 1}`,
+            price: `${index + 1}` * `${Number(100)}`
         }
         computerArray.push(computerObject);
     }
     console.log(computerArray);
 
     // bu dizi içindeki sadece computer Name bileşenleri gösterin (Map)
+    const arrayInComputerName = () => {
+        computerArray.map((temp) => {
+            //console.log(`${temp.computerName}`);
+        })
+    }
+    arrayInComputerName();
 
-
+    // call back function Price
+    const arrayInComputerObject=(obj, callBackFnc)=>{
+        computerArray.push(obj);
+         callBackFnc();
+    }
+    arrayInComputerObject({computerName:"computer 6",price:600},arrayInComputerName)
 }
 callbackFunctionComputer();
 
