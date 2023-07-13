@@ -751,7 +751,7 @@ let callbackFunctionComputer = () => {
     }
     arrayInComputerObject({ computerName: "computer 6", price: 600 }, arrayInComputerName)
 }
-callbackFunctionComputer();
+//callbackFunctionComputer();
 
 
 
@@ -788,11 +788,58 @@ let promiseFunctionComputer = () => {
         .then((response) => { console.log(response); })
         .catch((err) => { console.error(err); });
 }
-promiseFunctionComputer();
+//promiseFunctionComputer();
 
 
 ////////////////////////////////////////////////////////
-// object
+// Json nedir ? XML nedir arasındaki fark ?
+
+let objectTutorials = () => {
+
+    // object
+    const personObj = {
+        "name": "Hamit",
+        surname: "Mızrak",
+        "number": 44,
+        "isLogin": true,
+        "software": ["Html5", "css3", "js"],
+        fullName: function () {
+            return this.name + " " + this.surname;
+        }
+    };
+    console.log(personObj);
+
+    // variable
+    console.log(personObj.name);
+    console.log(personObj.surname);
+
+    // variable nested
+    console.log(personObj["name"]);
+    console.log(personObj["surname"]);
+
+    // Array
+    console.log(personObj.software[0]);
+
+    const objectToString = JSON.stringify(personObj);
+    console.log(objectToString);
+
+    const stringToObject = JSON.parse(objectToString);
+    console.log(stringToObject.name);
+
+    // Object Variable
+    personObj.language = "english";
+    console.log(personObj.language);
+
+    // function callback
+    console.log(personObj.fullName());
+
+
+}
+objectTutorials()
+
+
+
+////////////////////////////////////////////////////////
 // event
 // listener
 // dom
