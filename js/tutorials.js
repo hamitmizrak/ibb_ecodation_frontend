@@ -701,7 +701,7 @@ let arrResult = () => {
     console.log(data.toString().substring(0, 2));
     // splice ,slice 
 }
-arrResult();
+//arrResult();
 
 // ÖDEV
 /*
@@ -720,15 +720,34 @@ bu şarta uyan kaç tane sayı vardır ?
  buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
  bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
  2.YOL map,filter,counter
-
 */
+////////////////////////////////////////////////////////
+// callback - promise örneği
+let callbackFunctionComputer = () => {
+
+    // dizi objesi içerisinde 5 tane random obje olsun
+    const computerArray = 
+    [
+        { computerName: "callback computer 1", price: 100 },
+        { computerName: "callback computer 2", price: 200 },
+        { computerName: "callback computer 3", price: 300 }
+    ];
+
+
+
+
+}
+callbackFunctionComputer();
 
 ////////////////////////////////////////////////////////
-// callback promise örneği
-////////////////////////////////////////////////////////
-// obje
+// object
+// event
+// listener
 // dom
+// localStorage
+// KDV hesaplaması
 // jquery ajax GET/POST
+
 
 
 
