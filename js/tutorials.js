@@ -832,10 +832,10 @@ let objectTutorials = () => {
 
     // function callback
     console.log(personObj.fullName());
-
-
 }
-objectTutorials()
+objectTutorials();
+
+// object constructor
 
 
 
