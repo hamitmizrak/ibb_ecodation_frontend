@@ -725,15 +725,19 @@ bu şarta uyan kaç tane sayı vardır ?
 // callback - promise örneği
 let callbackFunctionComputer = () => {
 
-    // dizi objesi içerisinde 5 tane random obje olsun
-    const computerArray = 
-    [
-        { computerName: "callback computer 1", price: 100 },
-        { computerName: "callback computer 2", price: 200 },
-        { computerName: "callback computer 3", price: 300 }
-    ];
+    // dizi objesi içerisinde 5 tane random obje oluşturalım. 
+    const computerArray = [];
+    for (let index = 0; index < 5; index++) {
+        let computerObject =
+        {
+            computerName: `computer ${index+1}`,
+            price: `${index+1}`*`${Number(100)}`
+        }
+        computerArray.push(computerObject);
+    }
+    console.log(computerArray);
 
-
+    // bu dizi içindeki sadece computer Name bileşenleri gösterin (Map)
 
 
 }
