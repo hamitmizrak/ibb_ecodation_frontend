@@ -895,10 +895,13 @@ parameterCallApplyBind();
 // event
 // listener
 // dom
-// localStorage
-// KDV hesaplaması: JS
-// REACT
+// localStorage (Bireysel)
 // jquery ajax GET/POST
+////////////////////////////////////////////////////////
+// KDV hesaplaması: JS
+
+// REACT
+
 
 
 
