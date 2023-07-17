@@ -911,7 +911,7 @@ let newDataDate = () => {
     // now.innerText = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
     now.innerText = `${new Date().getFullYear()}`;
 
-    //CSS
+    // CSS
     now.style.color = "yellow";
     now.style.backgroundColor = "black";
     now.style.padding = "5rem";
