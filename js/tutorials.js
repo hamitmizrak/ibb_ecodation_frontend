@@ -914,6 +914,9 @@ let newDataDate = () => {
     //CSS
 }
 
+// paragrag_id2 adından bir paragraf olsun bu paragrafa kullanıcı mouse ile tıkladığında
+// aşağıda <span id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi.
+
 ////////////////////////////////////////////////////////
 
 // listener
