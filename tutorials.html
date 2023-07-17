@@ -11,43 +11,94 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- jquery  -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body class="container">
   <h3 class="text-center text-primary display-4">JavaScript</h3>
 
-  <button class="btn btn-primary" onclick="eventFunction()">onclick</button>
+
+  <!-- <button class="btn btn-primary" onclick="eventFunction()">onclick</button>
   <button class="btn btn-primary" ondblclick="eventFunction()">ondblclick</button>
 
   <button class="btn btn-success" onmousewheel="eventFunction()">onmousewheel</button>
   <!-- <button class="btn btn-danger" onmouseleave="eventFunction()">onmouseleave</button>
     <button class="btn btn-danger" onmouseover="eventFunction()">onmouseover</button> -->
-  <br />
-  <br />
-
+  <!-- <br />
+  <br /> -->
+  <!-- 
   <button class="btn btn-danger" onkeydown="eventFunction()">onkeydown</button>
-  <button class="btn btn-danger" onkeyup="eventFunction()">onkeyup</button>
+  <button class="btn btn-danger" onkeyup="eventFunction()">onkeyup</button> -->
 
-  <p id="parag_id" style="text-align: justify;">Lorem  recusandae harum, provident maiores repellat doloremque! Dolorum iure soluta ipsum delectus magni neque, eveniet aut officiis id aperiam aliquid voluptatibus est suscipit aliquam!</p>
+  <!-- <p id="parag_id" style="text-align: justify;">Lorem recusandae harum, provident maiores repellat doloremque! Dolorum
+    iure soluta ipsum delectus magni neque, eveniet aut officiis id aperiam aliquid voluptatibus est suscipit aliquam!
+  </p>
 
   <button class="btn btn-primary" onclick="newDataDate()">Data</button>
-  <span  id="text_data">...</span>
-<hr>
-<hr>
-<p id="dom_id" class="dom_class" name="dom_name">Dom öğreniyorum</p>
-<button class="btn btn-warning" onclick="domData2()">Dom Click</button>
-<br><br>
-<button class="btn btn-success" onclick="outSite()">Out Site</button>
+  <span id="text_data">...</span>
+  <hr>
+  <hr>
+  <p id="dom_id" class="dom_class" name="dom_name">Dom öğreniyorum</p>
+  <button class="btn btn-warning" onclick="domData2()">Dom Click</button>
+  <br><br>
+  <button class="btn btn-success" onclick="outSite()">Out Site</button> -->
 
-<hr>
-<hr>
-<p id="parag_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis unde minus aspernatur adipisci veniam voluptatem pariatur cumque tempore ab repellendus, deleniti similique, dolores voluptas impedit necessitatibus modi voluptate autem?
-Numquam nesciunt magnam dolore soluta, unde vero explicabo corrupti? Laboriosam repellat, veritatis pariatur perferendis quisquam ipsum velit impedit amet facere tenetur quia necessitatibus incidunt enim beatae facilis quam? Error, officiis!
-Cumque iste placeat, saepe reprehenderit porro deserunt adipisci rerum consequuntur. Dicta assumenda praesentium quisquam nobis! Molestiae quasi enim aut eos expedita eius laborum, asperiores saepe sed eaque eum laboriosam incidunt?</p>
-Log Information: <span id="log_admin"></span>
+  <!-- <hr>
+  <hr>
+  <p id="parag_list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis unde minus aspernatur
+    adipisci veniam voluptatem pariatur cumque tempore ab repellendus, deleniti similique, dolores voluptas impedit
+    necessitatibus modi voluptate autem?
+    Numquam nesciunt magnam dolore soluta, unde vero explicabo corrupti? Laboriosam repellat, veritatis pariatur
+    perferendis quisquam ipsum velit impedit amet facere tenetur quia necessitatibus incidunt enim beatae facilis quam?
+    Error, officiis!
+    Cumque iste placeat, saepe reprehenderit porro deserunt adipisci rerum consequuntur. Dicta assumenda praesentium
+    quisquam nobis! Molestiae quasi enim aut eos expedita eius laborum, asperiores saepe sed eaque eum laboriosam
+    incidunt?</p>
+  Log Information: <span id="log_admin"></span>  -->
+
+  <p id="parag1">paragraf-1</p>
+  <a href="#">data-1</a> <br />
+  <a href="#">data-2</a> <br />
+  <a href="#">data-3</a> <br />
+  <p class="parag2">paragraf-2</p>
+
+  <script>
+    $("a").on("click", function (event) {
+      event.preventDefault();
+      // hangi Tag'e tıklıyorsam onu Gizle
+      $(this).hide();
+
+      // class parag2 olanı gizle
+      $(".parag2").hide();
+
+      //
+      $("#parag1")
+      .html("<b> parag1 </b>")
+      .css("color","orange")
+      .css("backgroundColor","black");
+    });
+  </script>
+
+  <hr>
+  <hr>
+
+  <div id="clickme">
+    Click here
+  </div>
+  <img id="book" src="./img/header.jpg" alt="" width="100" height="123">
+
+  <script>
+
+    // With the element initially shown, we can hide it slowly:
+    $("#clickme").on("click", function () {
+      $("#book").hide("slow", function () {
+        alert("Animation complete.");
+      });
+    })
+  </script>
 
 
   <!-- Bootstrap JavaScript Libraries -->

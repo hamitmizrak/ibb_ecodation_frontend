@@ -947,35 +947,54 @@ let outSite = () => {
     //alert("deneme");
     let userInformation =
         window.confirm("Farklı bir sayfaya gitmek ister misiniz ?")
-            ? window.location="https://www.ecodation.com"
+            ? window.location = "https://www.ecodation.com"
             : window.alert("Bu sayfada kalındı");
 }
 
 
 // listener
 //  Ödev: Kullanıcı bu paragrafa kaç kere tıkladı ?
-let userListener=()=>{
-    let listenerParag=document.getElementById("parag_list");
-    listenerParag.addEventListener("click",function(e){
+let userListener = () => {
+    let listenerParag = document.getElementById("parag_list");
+    listenerParag.addEventListener("click", function (e) {
         //alert(e.preventDefault+" "+e.target);
         //document.getElementById("log_admin").innerHTML="takip edildi";
         $("#log_admin").html("takip edildi");
-    }); 
+    });
 }
 userListener()
 
 ////////////////////////////////////////////////////////
 // localStorage (Bireysel)
+// veriler bizim için önemlidir.
+// Verileri saklarız. Database, Browser
+
+let localStorageData=()=>{
+
+   const adi= localStorage.setItem("name",prompt("adınız giriniz"));
+   const soyadi= localStorage.setItem("surname","Mızrak");
+   console.log(localStorage);
+
+   const getAdi=localStorage.getItem("name");
+   alert(getAdi);
+
+   // RemoveItem
+   //localStorage.removeItem("name");
+
+   // Clear
+   //localStorage.clear();
+}
+//localStorageData()
 
 ////////////////////////////////////////////////////////
 // jQuery
 
 ////////////////////////////////////////////////////////
-// VKI 
+// VKI
 // KDV hesaplaması: JS
 // jquery ajax GET/POST
 // Login Validation
-// jquery hangi tuşa bastım bana söylesin. 
+// jquery hangi tuşa bastım bana söylesin.
 
 ////////////////////////////////////////////////////////
 // REACT
