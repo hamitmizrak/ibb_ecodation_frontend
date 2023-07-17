@@ -898,10 +898,25 @@ let eventFunction = () => {
 }
 
 ////////////////////////////////////////////////////////
-// listener
+// dom
+let newDataDate = () => {
+    // Override: Ezmek
+    // alert("dom");
+    let now = document.getElementById("text_data");
+    // HTML
+    // now.innerHTML ="<b><i><mark>"+ new Date().getFullYear(); +"</mark></i></b>";
+    // now.innerHTML = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
+
+    // TEXT
+    // now.innerText = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
+    now.innerText = `${new Date().getFullYear()}`;
+
+    //CSS
+}
 
 ////////////////////////////////////////////////////////
-// dom
+
+// listener
 // localStorage (Bireysel)
 // jQuery
 
