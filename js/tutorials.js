@@ -902,10 +902,13 @@ let eventFunction = () => {
 let newDataDate = () => {
     // Override: Ezmek
     // alert("dom");
-    let now = document.getElementById("text_data");
+    // let now = document.getElementById("text_data");
     // HTML
     // now.innerHTML ="<b><i><mark>"+ new Date().getFullYear(); +"</mark></i></b>";
     // now.innerHTML = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
+
+    // QUERYSELECTOR id #   class .
+    let now = document.querySelector("#text_data");
 
     // TEXT
     // now.innerText = `<b><i><mark> ${new Date().getFullYear()} </mark></i></b>`;
@@ -934,8 +937,9 @@ let domData2 = () => {
 // aşağıda <span id="special_id"></span> içine tıklandı veya paragraf üstüne gelindi.
 
 ////////////////////////////////////////////////////////
-
 // listener
+
+////////////////////////////////////////////////////////
 // localStorage (Bireysel)
 // jQuery
 
