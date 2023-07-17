@@ -912,6 +912,22 @@ let newDataDate = () => {
     now.innerText = `${new Date().getFullYear()}`;
 
     //CSS
+    now.style.color = "yellow";
+    now.style.backgroundColor = "black";
+    now.style.padding = "5rem";
+}
+
+let domData2 = () => {
+    //alert("çalıştı");
+
+    // ID
+    //let domUserData=document.getElementById("dom_id").innerText="ID";
+
+    // Class
+    //let domUserData=document.getElementsByClassName("dom_class")[0].innerText="class Data";
+
+    // Tag name
+    // let domUserData=document.getElementsByTagName("p")[1].innerText="class Data";
 }
 
 // paragrag_id2 adından bir paragraf olsun bu paragrafa kullanıcı mouse ile tıkladığında
