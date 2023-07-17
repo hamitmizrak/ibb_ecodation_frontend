@@ -839,11 +839,11 @@ let objectTutorials = () => {
 let objectConstructor = () => {
     let PersonConstructor = function (name, surname) {
         this.name = name;
-        this.surname=surname;
+        this.surname = surname;
         console.log(this);
     }
 
-    let personResult=new PersonConstructor("Hamit","Mızrak");
+    let personResult = new PersonConstructor("Hamit", "Mızrak");
     console.log(personResult.name);
 }
 //objectConstructor();
@@ -852,54 +852,63 @@ let objectConstructor = () => {
 // call, apply, bind
 // anonymous function ile arrow function arasındaki farka bakmanızı istiyoruz.
 
-let noParameterCallApplyBind=()=>{
+let noParameterCallApplyBind = () => {
 
     // function
-    let functionOtherObject=function(){
+    let functionOtherObject = function () {
         document.writeln(`Parametresiz Function: ${this.adi}<br/>`)
     };
 
     // object
-    let objectData={
-        "adi":"Spora Gidiyorum"
+    let objectData = {
+        "adi": "Spora Gidiyorum"
     };
 
     functionOtherObject.call(objectData);
     functionOtherObject.apply(objectData);
-    let deneme=functionOtherObject.bind(objectData);
+    let deneme = functionOtherObject.bind(objectData);
     deneme();
 }
-noParameterCallApplyBind();
-document.writeln(`<br/>`)
+//noParameterCallApplyBind();
+//document.writeln(`<br/>`)
 
-let parameterCallApplyBind=()=>{
+let parameterCallApplyBind = () => {
 
     // function
-    let functionOtherObject=function(surname){
+    let functionOtherObject = function (surname) {
         document.writeln(`Parametresiz Function: ${this.adi} => ${surname}<br/>`)
     };
 
     // object
-    let objectData={
-        "adi":"Spora Gidiyorum"
+    let objectData = {
+        "adi": "Spora Gidiyorum"
     };
 
-    functionOtherObject.call(objectData,"Mızrak");
-    functionOtherObject.apply(objectData,["Mızrak"]);
-    let deneme=functionOtherObject.bind(objectData,"Mızrak");
+    functionOtherObject.call(objectData, "Mızrak");
+    functionOtherObject.apply(objectData, ["Mızrak"]);
+    let deneme = functionOtherObject.bind(objectData, "Mızrak");
     deneme();
 }
-parameterCallApplyBind();
+//parameterCallApplyBind();
 
 ////////////////////////////////////////////////////////
 // event
+let eventFunction = () => {
+    alert("deneme")
+}
+
+////////////////////////////////////////////////////////
 // listener
+
+////////////////////////////////////////////////////////
 // dom
 // localStorage (Bireysel)
-// jquery ajax GET/POST
-////////////////////////////////////////////////////////
-// KDV hesaplaması: JS
+// jQuery
 
+////////////////////////////////////////////////////////
+// jquery ajax GET/POST
+// KDV hesaplaması: JS
+////////////////////////////////////////////////////////
 // REACT
 
 

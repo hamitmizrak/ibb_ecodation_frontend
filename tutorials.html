@@ -13,9 +13,20 @@
 
 </head>
 
-<body>
+<body class="container">
     <h3 class="text-center text-primary display-4">JavaScript</h3>
-  
+
+    <button class="btn btn-primary" onclick="eventFunction()">onclick</button>
+    <button class="btn btn-primary" ondblclick="eventFunction()">ondblclick</button>
+
+    <button class="btn btn-success" onmousewheel="eventFunction()">onmousewheel</button>
+    <!-- <button class="btn btn-danger" onmouseleave="eventFunction()">onmouseleave</button>
+    <button class="btn btn-danger" onmouseover="eventFunction()">onmouseover</button> -->
+    <br/>
+    <br/>
+
+    <button class="btn btn-danger" onkeydown="eventFunction()">onkeydown</button>
+    <button class="btn btn-danger" onkeyup="eventFunction()">onkeyup</button>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
