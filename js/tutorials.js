@@ -990,8 +990,8 @@ let localStorageData=()=>{
 // jQuery
 
 ////////////////////////////////////////////////////////
-// VKI
-// KDV hesaplaması: JS
+// V.K.I (LocalStorage)
+// K.D.V hesaplaması: JS
 // jquery ajax GET/POST
 // Login Validation
 // jquery hangi tuşa bastım bana söylesin.
