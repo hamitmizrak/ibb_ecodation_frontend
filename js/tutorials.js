@@ -1018,7 +1018,7 @@ let userJqueryKey = () => {
     }); // end document ready
 
 }; //end userJqueryKey
-userJqueryKey()
+//userJqueryKey()
 
 ////////////////////////////////////////////////////////
 // V.K.I (LocalStorage); acronym
@@ -1037,7 +1037,24 @@ userJqueryKey()
 // input: boy
 // submit button
 // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
+$(document).ready(function () {
+    let vkiFormule = () => {
 
+        //EVENT
+        $("#vki_submit_id").click(function () {
+            // Boy ve Kilo
+            let weight, height;
+            weight = jQuery.trim($("#weight_id").val());
+            alert(weight);
+
+            height = jQuery.trim($("#height_id").val());
+            alert(height)
+
+        }); // click
+
+    } //end vkiFormule
+    vkiFormule()
+}); // end document ready
 
 
 ////////////////////////////////////////////////////////

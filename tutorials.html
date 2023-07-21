@@ -36,34 +36,36 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="#" method="get" autocomplete="on">
+          <form action="#" method="get">
             <div class="container">
               <div class="row">
 
                 <div class="col-md-2">Kilo</div>
                 <div class="col-md-10 mb-3">
                   <div class="form-group">
-                    <input id="weight_id" type="text" class="form-control" placeholder="Kilonunu Giriniz" autofocus required/>
+                    <input id="weight_id" name="weight_id" type="text" class="form-control" placeholder="Kilonunu Giriniz" required />
+                    <span id="validation_weight" class="text-danger"></span>
                   </div>
                 </div>
 
                 <div class="col-md-2">Boy</div>
                 <div class="col-md-10 mb-3">
                   <div class="form-group">
-                    <input id="height_id" type="text" class="form-control" placeholder="Boyunu Giriniz" required>
+                    <input id="height_id" name="height_id" type="text" class="form-control" placeholder="Boyunu Giriniz" required>
+                    <span id="validation_height" class="text-danger"></span>
                   </div>
                 </div>
 
-                
+
                 <div class="col-md-2"></div>
                 <div class="col-md-10 mb-3">
                   <div class="form-group">
-                    <input type="reset" class="btn btn-danger" value="Temizle"/>
-                    <button type="submit" class="btn btn-primary">VKI Hesapla</button>
+                    <input type="reset" class="btn btn-danger" value="Temizle" />
+                    <button type="submit" class="btn btn-primary" id="vki_submit_id">VKI Hesapla</button>
                   </div>
                 </div>
 
-               
+
               </div>
             </div>
           </form>
