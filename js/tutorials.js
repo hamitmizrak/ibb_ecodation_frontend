@@ -1008,7 +1008,8 @@ let userJqueryKey = () => {
             userButton.preventDefault();
 
             // ENTER BASILDI
-            if (userButton.keyCode == 13) {
+            //if(userButton.ctrlKey){}  // Ctrl basılarak mı tıklanmış
+            if (userButton.keyCode == 13) { //keyCode: Her karakterin sayısıdır.
                 alert("ENTER Bastınız.")
                 console.log("ENTER Bastınız.")
             }
@@ -1020,7 +1021,24 @@ let userJqueryKey = () => {
 userJqueryKey()
 
 ////////////////////////////////////////////////////////
-// V.K.I (LocalStorage)
+// V.K.I (LocalStorage); acronym
+// Vucüt Kitle Index (VKI) 
+// Kullanıcıdan alınan Kilo ve Boy verileri formda inputtan aldıktan sonra
+// Formül: Kilo/((Boy)/100)^2
+// eğer bu formülde;
+// 18>X     çıkarsa: Düşük Kilolu (Doktora gidiniz)
+// 18<=X<24 çıkarsa: Normal Kilolu
+// 24<=X<29 çıkarsa: Fazla Kilolu
+// 29<=X<32 çıkarsa: Obez Kilolu
+// X>=32    çıkarsa: Aşırı Obez Kilolu (Doktora gidiniz)
+
+// VKI Butonu olsun. bu  butona bastığımızda (modal) Form açılsın.
+// input: kilo
+// input: boy
+// submit button
+// NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
+
+
 
 ////////////////////////////////////////////////////////
 // jquery ajax GET/POST (Backend: Java API, )

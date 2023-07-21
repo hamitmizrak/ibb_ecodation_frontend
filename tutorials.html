@@ -20,6 +20,69 @@
 <body class="container">
   <h3 class="text-center text-primary display-4">JavaScript</h3>
 
+  <!-- Modal trigger button -->
+  <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#vkiId">
+    VKI
+  </button>
+
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade" id="vkiId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center display-4">VKI</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="get" autocomplete="on">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-2">Kilo</div>
+                <div class="col-md-10 mb-3">
+                  <div class="form-group">
+                    <input id="weight_id" type="text" class="form-control" placeholder="Kilonunu Giriniz" autofocus required/>
+                  </div>
+                </div>
+
+                <div class="col-md-2">Boy</div>
+                <div class="col-md-10 mb-3">
+                  <div class="form-group">
+                    <input id="height_id" type="text" class="form-control" placeholder="Boyunu Giriniz" required>
+                  </div>
+                </div>
+
+                
+                <div class="col-md-2"></div>
+                <div class="col-md-10 mb-3">
+                  <div class="form-group">
+                    <input type="reset" class="btn btn-danger" value="Temizle"/>
+                    <button type="submit" class="btn btn-primary">VKI Hesapla</button>
+                  </div>
+                </div>
+
+               
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional: Place to the bottom of scripts -->
+  <script>
+    const myModal = new bootstrap.Modal(document.getElementById('vkiId'), options)
+
+  </script>
+
 
   <!-- <button class="btn btn-primary" onclick="eventFunction()">onclick</button>
   <button class="btn btn-primary" ondblclick="eventFunction()">ondblclick</button>
@@ -59,7 +122,7 @@
     incidunt?</p>
   Log Information: <span id="log_admin"></span>  -->
 
-  <p id="parag1">paragraf-1</p>
+  <!-- <p id="parag1">paragraf-1</p>
   <a href="#">data-1</a> <br />
   <a href="#">data-2</a> <br />
   <a href="#">data-3</a> <br />
@@ -80,12 +143,12 @@
       .css("color","orange")
       .css("backgroundColor","black");
     });
-  </script>
+  </script> -->
 
   <hr>
-  <hr>
+  <!-- <hr> -->
 
-  <div id="clickme">
+  <!-- <div id="clickme">
     Click here
   </div>
   <img id="book" src="./img/header.jpg" alt="" width="100" height="123">
@@ -98,7 +161,7 @@
         alert("Animation complete.");
       });
     })
-  </script>
+  </script> -->
 
 
   <!-- Bootstrap JavaScript Libraries -->
