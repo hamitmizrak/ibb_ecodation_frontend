@@ -1039,9 +1039,9 @@ let userJqueryKey = () => {
 // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
 let vkiFormule = () => {
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         // EVENT
-        $("#vki_submit_id").click(function() {
+        $("#vki_submit_id").click(function () {
             // Boy ve Kilo
             let weight, height;
 
@@ -1049,24 +1049,36 @@ let vkiFormule = () => {
             weight = jQuery.trim($("#weight_id").val());
             // alert(weight);
             // validation
-            if(weight==""){
-                $('#validation_weight').html("Kilosu boş geçilemez");
-            } 
             // eğer input içinde değer varsa hata mesajı silinsin.
-            // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+            if (weight == "") {
+                $('#validation_weight').html("Kilosu boş geçilemez");
+            } else if (jQuery.isNumeric(weight) == false) {
+                 // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+                $('#validation_weight').html("Sayı girmelisiniz");
+            }
+
             // LocalStorage => // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
-            
+
+            // const adi = localStorage.setItem("name", prompt("adınız giriniz"));
+            // const soyadi = localStorage.setItem("surname", "Mızrak");
+            // console.log(localStorage);
+            // const getAdi = localStorage.getItem("name");
+            // alert(getAdi);
+
             // BOY
             height = jQuery.trim($("#height_id").val());
             //alert(height);
             // validation
-            if(height==""){
+            if (height == "") {
                 $('#validation_height').html("Boy boş geçilemez");
+            } else if ($.isNumeric(weight) == false) {
+                 // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+                $('#validation_weight').html("Sayı girmelisiniz");
             }
             // eğer input içinde değer varsa hata mesajı silinsin.
-            // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+           
             // LocalStorage => // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
-            
+
         }); // click
 
     }) // end document ready
