@@ -1152,6 +1152,9 @@ let clearLocaleStorageData=()=>{
         alert("Silinmedi !!!");
     }
 }
+// $(function () {
+    //$("#vki_hesapla").on("click", function () {
+//}});
 
 
 
