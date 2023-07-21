@@ -1038,12 +1038,14 @@ let userJqueryKey = () => {
 // submit button
 // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
 let vkiFormule = () => {
-
     $(document).ready(function () {
         // EVENT
         $("#vki_submit_id").click(function () {
             // Boy ve Kilo
             let weight, height;
+
+            // Local Storage
+            let getLocalWeight, getLocalHeight;
 
             // KİLO
             weight = jQuery.trim($("#weight_id").val());
@@ -1053,17 +1055,15 @@ let vkiFormule = () => {
             if (weight == "") {
                 $('#validation_weight').html("Kilosu boş geçilemez");
             } else if (jQuery.isNumeric(weight) == false) {
-                 // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+                // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
                 $('#validation_weight').html("Sayı girmelisiniz");
+            } else {
+                // LocalStorage => // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
+                localStorage.setItem("weight", weight);
+                console.log(localStorage);
+                getLocalWeight = localStorage.getItem("weight");
+                console.log(`Local Weight:  ${getLocalWeight}`);
             }
-
-            // LocalStorage => // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
-
-            // const adi = localStorage.setItem("name", prompt("adınız giriniz"));
-            // const soyadi = localStorage.setItem("surname", "Mızrak");
-            // console.log(localStorage);
-            // const getAdi = localStorage.getItem("name");
-            // alert(getAdi);
 
             // BOY
             height = jQuery.trim($("#height_id").val());
@@ -1072,13 +1072,18 @@ let vkiFormule = () => {
             if (height == "") {
                 $('#validation_height').html("Boy boş geçilemez");
             } else if ($.isNumeric(weight) == false) {
-                 // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
+                // Kullanıcı Sayı girmezse sayı girmediniz hatasını versin (REGEX)
                 $('#validation_weight').html("Sayı girmelisiniz");
+            } else {
+                // LocalStorage => // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
+                localStorage.setItem("height", height);
+                console.log(localStorage);
+                getLocalHeight = localStorage.getItem("height");
+                console.log(`Local Height:  ${getLocalHeight}`);
             }
             // eğer input içinde değer varsa hata mesajı silinsin.
-           
-            // LocalStorage => // NOT: Kilo(weight), Boy(height), formül sonucu(formulaResult) ve Sonuç(result) LocalStorage olarak saklansın.
 
+          
         }); // click
 
     }) // end document ready
