@@ -1071,7 +1071,7 @@ let vkiFormule = () => {
                 getLocalWeight = Number(getLocalWeight);
             }
 
-            // BOY
+            // BOY DOM
             height = jQuery.trim(document.getElementById("height_id").value);
             //alert(height);
             // validation
@@ -1133,11 +1133,26 @@ let vkiFormule = () => {
 
             // Local
             getLocalVkiResult = localStorage.getItem("vki_result");
-        }); // click
 
+            // Local Storage Temizle
+
+        }); // click
     }) // end document ready
 };
 vkiFormule();
+
+
+// LocalStorage Cleaner
+let clearLocaleStorageData=()=>{
+    //alert("Silinecek")
+    if(window.confirm("Local Storage'ı silmek istediğinizden emin misiniz ?")){
+        localStorage.clear();
+       alert("silindi");
+    }else{
+        alert("Silinmedi !!!");
+    }
+}
+
 
 
 ////////////////////////////////////////////////////////
